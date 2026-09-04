@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "radioyield"
+version = "0.1.0"
+description = "Wireless test data and yield analysis: STDF V4 in C++, production analytics, UWB on public data."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+  "pyarrow>=14",
+  "scikit-learn>=1.4",
+  "pyyaml>=6",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+rig = ["pyserial>=3.5", "esptool>=4.7"]
+bench = ["pystdf", "Semi-ATE-STDF"]
+dev = ["pytest>=8", "hypothesis>=6", "pybind11>=2.12"]
+
+[project.scripts]
+radioyield = "radioyield.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["radioyield"]
+artifacts = ["radioyield/stdf/_stdf*.so", "radioyield/stdf/_stdf*.pyd"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "slow: long-running (sim scoring over many seeds, UWB training)",
+  "data: needs a downloaded public data set under data/",
+  "rig: needs ESP32-C6 boards on USB serial",
+]
