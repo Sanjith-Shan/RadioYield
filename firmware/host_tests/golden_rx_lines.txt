@@ -1,0 +1,8 @@
+# Golden RX lines shared by firmware/host_tests (C) and tests/collector (Python).
+# Format: <line exactly as the REF prints it>|radio|rx_ch|tx_ch|run_id|seq|rssi|pwr_qdbm|t_us|lqi|tag(hex)
+RX,wifi,6,6,7,123,-45,40,1234567,-1,beef*1C|wifi|6|6|7|123|-45|40|1234567|-1|beef
+RX,wifi,1,1,0,0,-98,8,0,-1,0001*22|wifi|1|1|0|0|-98|8|0|-1|0001
+RX,ble,0,37,65535,4294967295,-100,-60,18446744073709551615,-1,ffff*42|ble|0|37|65535|4294967295|-100|-60|18446744073709551615|-1|ffff
+RX,ble,0,0,300,17,-61,80,42,-1,00a0*3D|ble|0|0|300|17|-61|80|42|-1|00a0
+RX,154,26,26,12,99999,-87,-40,5000000000,212,cafe*3E|154|26|26|12|99999|-87|-40|5000000000|212|cafe
+RX,wifi,11,11,1,500,0,84,1,-1,1234*0A|wifi|11|11|1|500|0|84|1|-1|1234
