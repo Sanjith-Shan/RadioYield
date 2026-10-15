@@ -1,0 +1,57 @@
+menu "RadioYield rig"
+
+    choice RY_ROLE
+        prompt "Board role"
+        default RY_ROLE_DUT
+        help
+            DUT transmits test packets; REF receives them and logs one line per packet.
+            Normally set by sdkconfig.defaults.dut / sdkconfig.defaults.ref.
+        config RY_ROLE_DUT
+            bool "DUT (transmitter)"
+        config RY_ROLE_REF
+            bool "REF (receiver / logger)"
+    endchoice
+
+    config RY_ENABLE_IEEE802154
+        bool "Include the IEEE 802.15.4 raw-frame radio"
+        depends on IEEE802154_ENABLED
+        default y
+        help
+            Uses the esp_ieee802154 driver directly (no Thread/Zigbee stack). This is the
+            least-tested path in the firmware; turn it off if it misbehaves on your boards
+            and WiFi/BLE still work. INFO reports whether it is compiled in.
+
+    config RY_154_PAN_ID
+        hex "802.15.4 PAN ID used in test frames"
+        default 0x5259
+        range 0x0000 0xFFFE
+
+    config RY_BLE_ADV_WINDOW_MS
+        int "BLE: advertising duration per test packet (ms)"
+        default 30
+        range 5 1000
+        help
+            Each BLE test packet is one advertising event: advertising is started with this
+            duration and an interval of RY_BLE_ADV_ITVL_MS (longer), so exactly one event
+            fits. TX interval_ms for BLE must be at least this + 5.
+
+    config RY_BLE_ADV_ITVL_MS
+        int "BLE: advertising interval (ms), must exceed the window"
+        default 100
+        range 20 10240
+
+    config RY_TXPWR_OFFSET_QDBM
+        int "TX power table offset (0.25 dB units) added to every commanded power"
+        default 0
+        range -40 40
+        help
+            Lets one source tree produce two firmware "builds" with different TX power
+            tables (e.g. EVT1 = 0, EVT2 = -8 i.e. -2 dB) for build-over-build comparisons.
+            Reported in INFO as pwr_offset_qdbm; the commanded power in each packet is the
+            host's value, the applied one is in TXDONE pwr_act_qdbm.
+
+    config RY_FW_LABEL
+        string "Firmware build label reported by INFO"
+        default ""
+
+endmenu
