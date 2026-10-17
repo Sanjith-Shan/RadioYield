@@ -1,0 +1,5 @@
+# "EVT2" firmware build for the build-over-build demo: a TX power table 2 dB lower than
+# EVT1 (offset -8 quarter-dB on every commanded power). This is a deliberate firmware
+# variant, labelled as such in INFO and in every output file; it is not a hardware build.
+CONFIG_RY_TXPWR_OFFSET_QDBM=-8
+CONFIG_RY_FW_LABEL="EVT2_TXTABLE_M2DB"

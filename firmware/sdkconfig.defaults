@@ -1,0 +1,29 @@
+# Common settings for both roles. Role overlays: sdkconfig.defaults.dut / .ref.
+CONFIG_IDF_TARGET="esp32c6"
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP_LARGE=y
+
+# 1 kHz tick so TX interval_ms has 1 ms resolution
+CONFIG_FREERTOS_HZ=1000
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=6144
+
+# Console on the C6's native USB-Serial-JTAG (DevKitC-1 "USB" port, XIAO, SparkFun).
+# For a board whose only USB port goes through a USB-UART bridge, add sdkconfig.defaults.uart.
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_LOG_DEFAULT_LEVEL_WARN=y
+CONFIG_BOOTLOADER_LOG_LEVEL_WARN=y
+# full printf (%llu) is required by the RX line formatter
+# CONFIG_NEWLIB_NANO_FORMAT is not set
+
+# Bluetooth: NimBLE host, legacy advertising/scanning only
+CONFIG_BT_ENABLED=y
+CONFIG_BT_NIMBLE_ENABLED=y
+# CONFIG_BT_NIMBLE_50_FEATURE_SUPPORT is not set
+# CONFIG_BT_NIMBLE_EXT_ADV is not set
+# CONFIG_BT_NIMBLE_NVS_PERSIST is not set
+CONFIG_BT_NIMBLE_MAX_CONNECTIONS=1
+
+# WiFi + BLE + 802.15.4 share one RF front end; the firmware runs one at a time
+CONFIG_ESP_COEX_SW_COEXIST_ENABLE=y
+CONFIG_IEEE802154_ENABLED=y
+CONFIG_RY_ENABLE_IEEE802154=y
