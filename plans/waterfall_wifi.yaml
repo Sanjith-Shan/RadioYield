@@ -1,0 +1,25 @@
+# PER vs received level ("waterfall"), WiFi. Run at the weakest position (through-wall or
+# 16 m) so the low powers push the link into loss. Received level per step is the median
+# RSSI of the packets that arrived; at the bottom of the waterfall few arrive, which the
+# fit (radioyield.analysis.rf.per_waterfall) has to handle. 500 packets for 0.2% resolution.
+# OTA only: the level axis is receiver-reported RSSI, not a calibrated input level.
+plan: waterfall_wifi
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: wifi
+channels: [6]
+tx_power_qdbm: [8, 20, 28, 34, 44, 52, 60, 72, 80]
+packets_per_step: 500
+interval_ms: 5
+payload_len: 100
+setup:
+  mode: OTA
+  distance_m: 16.0
+  orientation: DUT and REF upright on stools, antennas vertical
+  obstacles: one interior wall between DUT and REF (write down the wall type)
+  height_m: 0.75
+  position_label: through-wall
+limits:
+  PER: {hi: 10}

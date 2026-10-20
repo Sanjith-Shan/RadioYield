@@ -1,0 +1,24 @@
+# OPTIONAL (M3): conducted sensitivity. Needs a board with a u.FL connector on each side
+# (or the DUT's antenna removed and a pigtail fitted), u.FL->SMA pigtails and fixed SMA
+# attenuators between DUT and REF, both boards in metal boxes / far apart so radiated
+# leakage does not dominate. Received level = TX power - attenuators - cable loss, so the
+# waterfall's x axis is a computed input level, comparable with the ESP32-C6 datasheet RX
+# sensitivity table only for the same rate (ESP-NOW default rate; check what that is).
+plan: conducted_wifi
+build: EVT1
+station: BENCH-COND
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: wifi
+channels: [6]
+tx_power_qdbm: [8, 20, 28, 34, 44, 52, 60, 72, 80]
+packets_per_step: 500
+interval_ms: 5
+payload_len: 100
+setup:
+  mode: CONDUCTED
+  attenuation_db: [30, 30, 30, 20] # 110 dB; 80 dB never reaches the waterfall (docs/results/sim_rig.md). EDIT to what you use
+  cable_loss_db: 1.0               # EDIT: pigtails + adapters, measured or datasheet
+  orientation: n/a (conducted)
+  obstacles: n/a (conducted)
+  notes: write down shielding used and whether the REF still hears the DUT with the cable unplugged

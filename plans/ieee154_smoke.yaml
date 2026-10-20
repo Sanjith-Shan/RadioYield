@@ -1,0 +1,19 @@
+# 802.15.4 raw frames (CONFIG_RY_ENABLE_IEEE802154). Least-tested path: if SET radio=154
+# returns ERR, skip it and note it; WiFi/BLE results do not depend on it.
+plan: ieee154_smoke
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: "154"
+channels: [11, 15, 20, 25, 26]
+tx_power_dbm: [0, 10, 20]
+packets_per_step: 200
+interval_ms: 5
+payload_len: 32
+setup:
+  mode: OTA
+  distance_m: 2.0
+  orientation: DUT and REF upright on stools, antennas vertical, PCB faces toward each other
+  obstacles: none (line of sight)
+  height_m: 0.75

@@ -1,0 +1,19 @@
+# Path loss walk, BLE (all three advertising channels per event). Run at each tape mark
+# right after pathloss_wifi.yaml, without moving the boards.
+plan: pathloss_ble
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: ble
+channels: [all]
+tx_power_dbm: [9]
+packets_per_step: 300
+interval_ms: 40
+setup:
+  mode: OTA
+  distance_m: 1.0           # overridden with --distance at each mark
+  orientation: DUT and REF upright on stools, antennas vertical, PCB faces toward each other
+  obstacles: none (hallway line of sight)
+  height_m: 0.75
+  environment: indoor hallway

@@ -1,0 +1,21 @@
+# BLE smoke test + scan-channel self-check at 1 m.
+#  - ch all: PER should be ~0 at 1 m. If it is not, the one-event-per-packet advertising
+#    window is too short for this controller: rebuild with a larger CONFIG_RY_BLE_ADV_WINDOW_MS.
+#  - ch 37/38/39: reported as RX_FRAC (not PER). ~33% means the REF scan rotates channels as
+#    expected; ~100% on one channel and ~0% on the others means it parks (write it down).
+plan: smoke_ble_1m
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: ble
+channels: [all, 37, 38, 39]
+tx_power_dbm: [9]
+packets_per_step: 200
+interval_ms: 50
+scan_ms: 30
+setup:
+  mode: OTA
+  distance_m: 1.0
+  orientation: boards flat on the floor, antennas parallel, facing each other
+  obstacles: none (line of sight)

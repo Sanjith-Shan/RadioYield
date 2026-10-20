@@ -1,0 +1,18 @@
+# TX power control linearity, BLE: all 13 ESP32-C6 advertising power levels at 2 m.
+plan: txlin_ble
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: ble
+channels: [all]
+tx_power_dbm: [-15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18, 20]
+packets_per_step: 200
+interval_ms: 40
+repeats: 2
+setup:
+  mode: OTA
+  distance_m: 2.0
+  orientation: DUT and REF upright on stools, antennas vertical, PCB faces toward each other
+  obstacles: none (line of sight)
+  height_m: 0.75

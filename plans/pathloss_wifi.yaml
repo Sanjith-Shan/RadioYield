@@ -1,0 +1,23 @@
+# Path loss walk, WiFi. Run once per tape mark, overriding distance and position:
+#   python -m radioyield.collector run plans/pathloss_wifi.yaml --dut ... --ref ... \
+#          --distance 4 --position tape-4m --out out/rig/
+# Same power, 3 channels, 300 packets each. Median RSSI per distance feeds the
+# log-distance fit (radioyield.analysis.rf.path_loss_fit).
+plan: pathloss_wifi
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: wifi
+channels: [1, 6, 11]
+tx_power_qdbm: [80]
+packets_per_step: 300
+interval_ms: 5
+payload_len: 32
+setup:
+  mode: OTA
+  distance_m: 1.0           # overridden with --distance at each mark
+  orientation: DUT and REF upright on stools, antennas vertical, PCB faces toward each other
+  obstacles: none (hallway line of sight)
+  height_m: 0.75
+  environment: indoor hallway

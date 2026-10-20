@@ -1,0 +1,22 @@
+# OPTIONAL (M3): conducted BLE waterfall. Same bench as conducted_wifi.yaml (u.FL pigtails,
+# fixed attenuators, boards shielded from each other). Received level = applied TX power -
+# attenuators - cable loss. Datasheet comparison: ESP32-C6 BLE 1M PHY sensitivity is stated
+# at 30.8% PER, not 10%; the fit reports the level at 10% PER, so say which one you quote.
+plan: conducted_ble
+build: EVT1
+station: BENCH-COND
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: ble
+channels: [all]
+tx_power_dbm: [-15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18, 20]
+packets_per_step: 300
+interval_ms: 40
+setup:
+  mode: CONDUCTED
+  attenuation_db: [30, 30, 30, 20] # 110 dB; 80 dB never reaches the waterfall (docs/results/sim_rig.md). EDIT to what you use
+  cable_loss_db: 1.0               # EDIT: pigtails + adapters, measured or datasheet
+  orientation: n/a (conducted)
+  obstacles: n/a (conducted)
+limits:
+  PER: {hi: 10}

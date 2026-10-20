@@ -1,0 +1,20 @@
+# PER vs received level, BLE (all channels), same position as waterfall_wifi.yaml.
+plan: waterfall_ble
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: ble
+channels: [all]
+tx_power_dbm: [-15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15, 18, 20]
+packets_per_step: 300
+interval_ms: 40
+setup:
+  mode: OTA
+  distance_m: 16.0
+  orientation: DUT and REF upright on stools, antennas vertical
+  obstacles: one interior wall between DUT and REF (write down the wall type)
+  height_m: 0.75
+  position_label: through-wall
+limits:
+  PER: {hi: 10}

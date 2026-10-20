@@ -1,0 +1,22 @@
+# TX power control linearity, WiFi: every esp_wifi_set_max_tx_power step (the driver only
+# has these 11 levels, see protocol.WIFI_QDBM_STEPS) at a fixed 2 m position, 3 repeats.
+# Compare RSSI change against the commanded change (radioyield.analysis.rf.tx_linearity).
+# At the lowest powers the link may lose packets: that is data, not a failure.
+plan: txlin_wifi
+build: EVT1
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: wifi
+channels: [6]
+tx_power_qdbm: [8, 20, 28, 34, 44, 52, 56, 60, 66, 72, 80]
+packets_per_step: 300
+interval_ms: 5
+payload_len: 32
+repeats: 3
+setup:
+  mode: OTA
+  distance_m: 2.0
+  orientation: DUT and REF upright on stools, antennas vertical, PCB faces toward each other
+  obstacles: none (line of sight)
+  height_m: 0.75

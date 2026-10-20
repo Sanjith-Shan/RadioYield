@@ -1,0 +1,30 @@
+# Build-over-build input. Run this plan twice at the SAME position, changing one thing:
+#   (a) firmware TX table: flash the DUT with build_all.sh evt1, run with --build EVT1;
+#       reflash with build_all.sh evt2 (-2 dB table), run with --build EVT2; or
+#   (b) antenna orientation: --build ORIENT_A (as below), then rotate the DUT 90 degrees,
+#       edit setup.orientation, run with --build ORIENT_B.
+# The "build" is a firmware or orientation variant, not a hardware revision; say so.
+# 10 repeats: with 5, the smallest possible Mann-Whitney p (0.008) times 9 tests under Holm
+# is above 0.05, so no shift could ever be flagged (found by the virtual rig, docs/results/sim_rig.md).
+plan: build_compare_wifi
+build: EVT1
+build_note: firmware TX power table variant (EVT1 nominal / EVT2 -2 dB), same board
+station: HALL-A
+unit_serial: DUT-01
+ref_serial: REF-01
+radio: wifi
+channels: [1, 6, 11]
+tx_power_qdbm: [44, 60, 80]
+packets_per_step: 200
+interval_ms: 5
+payload_len: 32
+repeats: 10
+setup:
+  mode: OTA
+  distance_m: 4.0
+  orientation: DUT and REF upright on stools, antennas vertical, PCB faces toward each other
+  obstacles: none (line of sight)
+  height_m: 0.75
+limits:
+  PER: {hi: 5}
+  RSSI_MEDIAN: {lo: -80}
