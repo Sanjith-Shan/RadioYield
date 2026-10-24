@@ -1,0 +1,3738 @@
+{
+  "summary": {
+    "n_sessions": 30,
+    "label": "SIMULATED",
+    "path_loss": {
+      "fitted": {
+        "k": 30,
+        "n": 30,
+        "rate": 1.0,
+        "wilson95": [
+          0.8864829086095221,
+          1.0
+        ]
+      },
+      "exponent_error": {
+        "median": 0.07435440696924445,
+        "p05": -0.5069830096360439,
+        "p95": 0.6257944707205462,
+        "mean": 0.038366852607964644,
+        "n": 30
+      },
+      "ci_coverage": {
+        "k": 30,
+        "n": 30,
+        "rate": 1.0,
+        "wilson95": [
+          0.8864829086095221,
+          1.0
+        ]
+      },
+      "ci_width": {
+        "median": 2.7985736934177066,
+        "p05": 0.9693857355410086,
+        "p95": 4.568770236036998,
+        "mean": 2.7551583935297583,
+        "n": 30
+      },
+      "intercept_error_db": {
+        "median": -0.27070990793110994,
+        "p05": -5.422442140741592,
+        "p95": 3.2717609260633838,
+        "mean": -0.7033252101673294,
+        "n": 30
+      },
+      "sigma_est_db": {
+        "median": 4.185577996391979,
+        "p05": 1.4498241065582358,
+        "p95": 6.833103668309517,
+        "mean": 4.120645590164779,
+        "n": 30
+      }
+    },
+    "tx_linearity": {
+      "wifi": {
+        "slope_error": {
+          "median": 0.001026185421089898,
+          "p05": -0.027887473460721877,
+          "p95": 0.032420382165605006,
+          "mean": 0.0032790752535975408,
+          "n": 30
+        },
+        "ci_coverage": {
+          "k": 29,
+          "n": 30,
+          "rate": 0.9666666666666667,
+          "wilson95": [
+            0.8332924860304112,
+            0.9940915620051425
+          ]
+        }
+      },
+      "ble": {
+        "slope_error": {
+          "median": -0.0010317688837700456,
+          "p05": -0.01592883194164501,
+          "p95": 0.016881418562241946,
+          "mean": -0.0011241481908052593,
+          "n": 30
+        },
+        "ci_coverage": {
+          "k": 27,
+          "n": 30,
+          "rate": 0.9,
+          "wilson95": [
+            0.7437855868473339,
+            0.9654007400402839
+          ]
+        }
+      }
+    },
+    "waterfall": {
+      "ble CONDUCTED": {
+        "fitted": {
+          "k": 30,
+          "n": 30,
+          "rate": 1.0,
+          "wilson95": [
+            0.8864829086095221,
+            1.0
+          ]
+        },
+        "error_db": {
+          "median": 1.0120178544150917,
+          "p05": -0.7284536125399412,
+          "p95": 1.9988480046891635,
+          "mean": 0.7616889135292619,
+          "n": 30
+        },
+        "ci_coverage": {
+          "k": 9,
+          "n": 30,
+          "rate": 0.3,
+          "wilson95": [
+            0.16664562643958933,
+            0.4787612101166018
+          ]
+        },
+        "per_range_when_not_fitted": []
+      },
+      "ble OTA": {
+        "fitted": {
+          "k": 0,
+          "n": 30,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.113517091390478
+          ]
+        },
+        "error_db": null,
+        "ci_coverage": null,
+        "per_range_when_not_fitted": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "wifi CONDUCTED": {
+        "fitted": {
+          "k": 0,
+          "n": 30,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.113517091390478
+          ]
+        },
+        "error_db": null,
+        "ci_coverage": null,
+        "per_range_when_not_fitted": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "wifi OTA": {
+        "fitted": {
+          "k": 0,
+          "n": 30,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.113517091390478
+          ]
+        },
+        "error_db": null,
+        "ci_coverage": null,
+        "per_range_when_not_fitted": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    },
+    "build_evt": {
+      "any_flag": {
+        "k": 3,
+        "n": 30,
+        "rate": 0.1,
+        "wilson95": [
+          0.03459925995971615,
+          0.25621441315266624
+        ]
+      },
+      "flagged_tests": {
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 1.0,
+        "mean": 0.1,
+        "n": 30
+      },
+      "n_tests": 9,
+      "min_p_raw": {
+        "median": 0.006501702373081823,
+        "p05": 0.00397675170978865,
+        "p95": 0.00808178517545596,
+        "mean": 0.006274166143010945,
+        "n": 30
+      },
+      "min_p_holm": {
+        "median": 0.058515321357736405,
+        "p05": 0.035790765388097855,
+        "p95": 0.07273606657910363,
+        "mean": 0.05646749528709852,
+        "n": 30
+      },
+      "median_shift_error_db": {
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0,
+        "mean": -0.03333333333333333,
+        "n": 30
+      },
+      "ci_coverage_mean": {
+        "median": 1.0,
+        "p05": 0.9388888888888889,
+        "p95": 1.0,
+        "mean": 0.9888888888888889,
+        "n": 30
+      }
+    },
+    "build_orient": {
+      "any_flag": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.113517091390478
+        ]
+      },
+      "flagged_tests": {
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0,
+        "mean": 0.0,
+        "n": 30
+      },
+      "n_tests": 9,
+      "min_p_raw": {
+        "median": 0.09295731572744009,
+        "p05": 0.020395050219876136,
+        "p95": 0.34318589513021225,
+        "mean": 0.13110060684371638,
+        "n": 30
+      },
+      "min_p_holm": {
+        "median": 0.8366158415469609,
+        "p05": 0.17968007974694436,
+        "p95": 1.0,
+        "mean": 0.7152700287843757,
+        "n": 30
+      },
+      "median_shift_error_db": {
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0,
+        "mean": 0.03333333333333333,
+        "n": 30
+      },
+      "ci_coverage_mean": {
+        "median": 1.0,
+        "p05": 1.0,
+        "p95": 1.0,
+        "mean": 1.0,
+        "n": 30
+      }
+    },
+    "unit_to_unit_error_db": {
+      "median": 0.08791741891074127,
+      "p05": -1.0474459918363952,
+      "p95": 0.6439639460722321,
+      "mean": -0.09573362868685804,
+      "n": 30
+    },
+    "drift_error_db": {
+      "median": 0.0,
+      "p05": -0.5,
+      "p95": 1.0,
+      "mean": 0.075,
+      "n": 30
+    },
+    "notes_seen": [
+      "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+      "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+      "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+    ],
+    "per_session": {
+      "runs": 27,
+      "steps": 363,
+      "packets": 89185
+    },
+    "seeds": [
+      2000,
+      2029
+    ],
+    "truth_defaults": {
+      "exponent": 1.57,
+      "shadow_sigma_db": 3.77,
+      "pl_1m_db": 40.19557974865796,
+      "freq_sel_sigma_db": 2.0,
+      "temporal_sigma_db": 0.5,
+      "fast_sigma_db": 1.0,
+      "wall_loss_db": 6.0,
+      "wall_distance_m": 6.0,
+      "waterfall_scale_db": 1.0,
+      "rssi_bias_sd_db": 2.0,
+      "tx_error_sd_db": 0.5,
+      "atten_tol_db": 0.5,
+      "cable_true_db": 1.3,
+      "orientation_effect_db": 0.0,
+      "drift_db": 0.0,
+      "sens_ds": {
+        "wifi": [
+          -99.2,
+          0.08
+        ],
+        "ble": [
+          -98.5,
+          0.308
+        ],
+        "154": [
+          -104.0,
+          0.01
+        ]
+      },
+      "level_at_10pct_per": {
+        "wifi": -99.445122458033,
+        "ble": -97.11226159530788,
+        "154": -106.39789527279838
+      }
+    },
+    "pathloss_positions_m": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "plans": {
+      "build_compare_repeats": 5,
+      "conducted_attenuation_db": [
+        30,
+        30,
+        20
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89185,
+      "path_loss": {
+        "n": 1.6609640474436813,
+        "lo": 0.8604758948362224,
+        "hi": 2.46145220005114,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 2.394437999475731,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -18.6,
+        "truth_intercept": -18.925726168542855
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0147566945004318,
+          "lo": 0.999535668698912,
+          "hi": 1.0299777203019516,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.4335588828102459
+        },
+        "wifi": {
+          "slope": 1.0343949044585987,
+          "lo": 0.9967141304118168,
+          "hi": 1.0720756785053807,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5382165605095537
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.03475686613082,
+          "lo": -96.10969525185439,
+          "hi": -95.98941326665732,
+          "truth": -97.11226159530788,
+          "error": 1.0775047291770647,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -98.0895333970099,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -95.75667253428479,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.09295731572744009,
+        "min_p_holm": 0.8366158415469609,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 1.3582995061110201
+      },
+      "drift": {
+        "est_db": 0.75,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2000,
+      "truth": {
+        "rssi_bias_db": 1.3555890610230965,
+        "tx_error_db": {
+          "DUT-01": -0.08573548090798841,
+          "DUT-02": 1.2725640252030317
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89203,
+      "path_loss": {
+        "n": 1.959937575983544,
+        "lo": 0.7225333464428005,
+        "hi": 3.1973418055242875,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 3.70135110466435,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -18.599999999999998,
+        "truth_intercept": -19.686792869905112
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.014732699875228,
+          "lo": 0.9849476199457705,
+          "hi": 1.0445177798046854,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 1.0160763988866535
+        },
+        "wifi": {
+          "slope": 0.9663128096249116,
+          "lo": 0.9233053702383864,
+          "hi": 1.0093202490114368,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5510969568294399
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -98.06068915200478,
+          "lo": -101.29964050350175,
+          "hi": -96.13188500167591,
+          "truth": -97.11226159530788,
+          "error": -0.9484275566968989,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -98.72803004348803,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.39516918076292,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.2703441406547801,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.29729953839020473
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2001,
+      "truth": {
+        "rssi_bias_db": 0.7170924145449675,
+        "tx_error_db": {
+          "DUT-01": -0.20830553579211825,
+          "DUT-02": 0.08899400259808649
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89168,
+      "path_loss": {
+        "n": 1.9599375759835436,
+        "lo": 0.4073974784696879,
+        "hi": 3.5124776734973993,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 4.643992535164832,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -21.0,
+        "truth_intercept": -21.8874302310979
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9844274882426336,
+          "lo": 0.9619309459469214,
+          "hi": 1.0069240305383458,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8225837412419637
+        },
+        "wifi": {
+          "slope": 0.9692144373673036,
+          "lo": 0.928050757607626,
+          "hi": 1.0103781171269812,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6417197452229289
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -99.96051394238033,
+          "lo": -105.44151223410944,
+          "hi": -96.25442654753552,
+          "truth": -97.11226159530788,
+          "error": -2.848252347072446,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.73825728021349,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.40539641748838,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.00749495751693524,
+        "min_p_holm": 0.06745461765241716,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.02092133533779403,
+        "min_p_holm": 0.18829201804014628,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.2165782585263395
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2002,
+      "truth": {
+        "rssi_bias_db": -1.2931348221804844,
+        "tx_error_db": {
+          "DUT-01": -0.3987156602594518,
+          "DUT-02": -0.18213740173311233
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89195,
+      "path_loss": {
+        "n": 1.7274026093414285,
+        "lo": 1.3225312801654852,
+        "hi": 2.132273938517372,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 1.2110601416389968,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -18.299999999999997,
+        "truth_intercept": -20.023705445973214
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9874988002687399,
+          "lo": 0.9641735655111316,
+          "hi": 1.0108240350263482,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7519435646415147
+        },
+        "wifi": {
+          "slope": 1.0147204529370135,
+          "lo": 0.9731531275019333,
+          "hi": 1.0562877783720939,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6484076433121047
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.85302118849293,
+          "lo": -98.01944436371636,
+          "hi": -96.05302385788653,
+          "truth": -97.11226159530788,
+          "error": 0.2592404068149534,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -98.61807393951224,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.28521307678713,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.09295731572744009,
+        "min_p_holm": 0.8366158415469609,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": 1.0562179963280804
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2003,
+      "truth": {
+        "rssi_bias_db": 0.8270485185207612,
+        "tx_error_db": {
+          "DUT-01": -0.6551742158360131,
+          "DUT-02": 0.4010437804920674
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89169,
+      "path_loss": {
+        "n": 1.3619905189038186,
+        "lo": 0.7306225079511482,
+        "hi": 1.993358529856489,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 1.8885620632287048,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -20.6,
+        "truth_intercept": -20.201250862718194
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0186198291582684,
+          "lo": 1.0053950008830297,
+          "hi": 1.0318446574335072,
+          "truth": 1.0,
+          "covers": false,
+          "max_resid_db": 0.43171129666954755
+        },
+        "wifi": {
+          "slope": 0.9957891012031139,
+          "lo": 0.9686899713043798,
+          "hi": 1.022888231101848,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.38980891719745614
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.0090333871308,
+          "lo": -96.07432298362218,
+          "hi": -95.9676416569698,
+          "truth": -97.11226159530788,
+          "error": 1.103228208177086,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -99.26628886373153,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.93342800100642,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 1,
+        "min_p_raw": 0.00397675170978865,
+        "min_p_holm": 0.035790765388097855,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.2703441406547801,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.7122463717784966
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2004,
+      "truth": {
+        "rssi_bias_db": 0.17883359430146284,
+        "tx_error_db": {
+          "DUT-01": -0.18450470836169314,
+          "DUT-02": 0.5277416634168034
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89171,
+      "path_loss": {
+        "n": 1.0630169903639561,
+        "lo": -0.10148806174153635,
+        "hi": 2.227522042469449,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 3.483293460696834,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -23.4,
+        "truth_intercept": -17.970734485300177
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.002663403397639,
+          "lo": 0.9878720236998397,
+          "hi": 1.0174547830954381,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.30139648718687084
+        },
+        "wifi": {
+          "slope": 1.0209483368719037,
+          "lo": 0.9809291635420988,
+          "hi": 1.0609675102017084,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.4931351733899483
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.00444098294894,
+          "lo": -96.06683238041141,
+          "hi": -95.96369888273796,
+          "truth": -97.11226159530788,
+          "error": 1.1078206123589496,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -97.27391193193644,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -94.94105106921133,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.12133525035848208,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -1.0,
+        "truth_db": -0.14336074090120537
+      },
+      "drift": {
+        "est_db": 1.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2005,
+      "truth": {
+        "rssi_bias_db": 2.1712105260965577,
+        "tx_error_db": {
+          "DUT-01": 0.05363473726122632,
+          "DUT-02": -0.08972600363997907
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89198,
+      "path_loss": {
+        "n": 1.860279733136923,
+        "lo": 1.059791580529464,
+        "hi": 2.6607678857443817,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 2.3944379994757297,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -21.000000000000004,
+        "truth_intercept": -20.773030790828752
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0011757366349938,
+          "lo": 0.9803756881765325,
+          "hi": 1.021975785093455,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8670697763700872
+        },
+        "wifi": {
+          "slope": 0.9879688605803255,
+          "lo": 0.9440403927150275,
+          "hi": 1.0318973284456237,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.70806794055202
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.17708627940277,
+          "lo": -96.67929128236182,
+          "hi": -95.88558307505924,
+          "truth": -97.11226159530788,
+          "error": 0.9351753159051128,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -99.48422950437163,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -97.15136864164651,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.2040238704744366,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -2.0,
+        "truth_db": -0.21183174080194167
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2006,
+      "truth": {
+        "rssi_bias_db": -0.039107046338629096,
+        "tx_error_db": {
+          "DUT-01": -0.5383439958321603,
+          "DUT-02": -0.750175736634102
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89167,
+      "path_loss": {
+        "n": 1.694183328392555,
+        "lo": -0.1681847783387429,
+        "hi": 3.5565514351238527,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 5.570756980279551,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -17.400000000000002,
+        "truth_intercept": -16.299088616059237
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9985123332373548,
+          "lo": 0.9777210817531581,
+          "hi": 1.0193035847215515,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6108071791918626
+        },
+        "wifi": {
+          "slope": 0.9813517338995045,
+          "lo": 0.9414398482762044,
+          "hi": 1.0212636195228046,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8419674451521573
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.0907922299312,
+          "lo": -96.19293024925933,
+          "hi": -96.03475686613082,
+          "truth": -97.11226159530788,
+          "error": 1.0214693653766886,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -95.83993935026662,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -93.5070784875415,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.008561916896063827,
+        "min_p_holm": 0.07705725206457444,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.01996445330521604,
+        "min_p_holm": 0.17968007974694436,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": 0.4188798572958724
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2007,
+      "truth": {
+        "rssi_bias_db": 3.605183107766376,
+        "tx_error_db": {
+          "DUT-01": 0.29130802483235174,
+          "DUT-02": 0.7101878821282241
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89161,
+      "path_loss": {
+        "n": 1.0630169903639561,
+        "lo": 0.14950406969268115,
+        "hi": 1.976529911035231,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 2.7325202042558945,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -30.4,
+        "truth_intercept": -22.999959003485905
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9917698435550437,
+          "lo": 0.9674053579709806,
+          "hi": 1.016134329139107,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8070592187350059
+        },
+        "wifi": {
+          "slope": 1.0454352441613588,
+          "lo": 1.0104994397291986,
+          "hi": 1.080371048593519,
+          "truth": 1.0,
+          "covers": false,
+          "max_resid_db": 0.4400212314225129
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.48222132523979,
+          "lo": -95.89974430753027,
+          "hi": -95.10970710033007,
+          "truth": -97.11226159530788,
+          "error": 1.6300402700680934,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -101.90111043787546,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -99.56824957515035,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.05582929463924008,
+        "min_p_holm": 0.5024636517531607,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": 0.1675466859761462
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2008,
+      "truth": {
+        "rssi_bias_db": -2.45598797984246,
+        "tx_error_db": {
+          "DUT-01": -0.34839127498548234,
+          "DUT-02": -0.18084458900933614
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89182,
+      "path_loss": {
+        "n": 1.6277447664948077,
+        "lo": 0.645452856587256,
+        "hi": 2.6100366764023595,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 2.9382534494718673,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -21.2,
+        "truth_intercept": -19.855615164016456
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0037911507822248,
+          "lo": 0.9841785854376046,
+          "hi": 1.023403716126845,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.622708513293027
+        },
+        "wifi": {
+          "slope": 1.024769992922859,
+          "lo": 0.9734970272967597,
+          "hi": 1.0760429585489584,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7565463552724765
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.86953062250342,
+          "lo": -98.06068915200478,
+          "hi": -96.05302385788653,
+          "truth": -97.11226159530788,
+          "error": 0.2427309728044662,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -98.81755902470839,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.48469816198327,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -3.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.12133525035848208,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.008592160944705662
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2009,
+      "truth": {
+        "rssi_bias_db": 0.6275634333246153,
+        "tx_error_db": {
+          "DUT-01": -0.28759884868310737,
+          "DUT-02": -0.29619100962781303
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89186,
+      "path_loss": {
+        "n": 2.225691823574533,
+        "lo": 0.45352552816303127,
+        "hi": 3.9978581189860343,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 5.300943312279427,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -18.0,
+        "truth_intercept": -22.683287882788342
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9997000671849505,
+          "lo": 0.9807463991613212,
+          "hi": 1.0186537352085798,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.520107495920918
+        },
+        "wifi": {
+          "slope": 0.9978768577494692,
+          "lo": 0.9710112334234201,
+          "hi": 1.0247424820755184,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.416135881104033
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.97512665343412,
+          "lo": -98.329382499592,
+          "hi": -96.05974789930035,
+          "truth": -97.11226159530788,
+          "error": 0.13713494187376796,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -101.73197717495167,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -99.39911631222655,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.06679806847513828,
+        "min_p_holm": 0.6011826162762445,
+        "median_shift_db": 1.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -1.0,
+        "truth_db": -0.5849912314121626
+      },
+      "drift": {
+        "est_db": 1.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2010,
+      "truth": {
+        "rssi_bias_db": -2.2868547169186666,
+        "tx_error_db": {
+          "DUT-01": -0.20085341721171196,
+          "DUT-02": -0.7858446486238745
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89181,
+      "path_loss": {
+        "n": 1.2291133951083242,
+        "lo": 0.6468608690555789,
+        "hi": 1.8113659211610695,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 1.7416467303484164,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -22.6,
+        "truth_intercept": -20.861608142281664
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.995297053460025,
+          "lo": 0.9771750652807991,
+          "hi": 1.0134190416392508,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.545829734139545
+        },
+        "wifi": {
+          "slope": 0.9874026893135175,
+          "lo": 0.953981491518062,
+          "hi": 1.020823887108973,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.31316348195329624
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.99999999848005,
+          "lo": -96.05974789930035,
+          "hi": -95.95882193167256,
+          "truth": -97.11226159530788,
+          "error": 1.1122615968278353,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.36753247788015,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.03467161515503,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.05582929463924008,
+        "min_p_holm": 0.5024636517531607,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.14070883974230367
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2011,
+      "truth": {
+        "rssi_bias_db": -0.922410019847144,
+        "tx_error_db": {
+          "DUT-01": 0.25638162622344407,
+          "DUT-02": 0.1156727864811404
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89150,
+      "path_loss": {
+        "n": 0.8637013046707143,
+        "lo": -0.575521662868897,
+        "hi": 2.3029242722103254,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 4.3050358109234494,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -26.2,
+        "truth_intercept": -21.335386815742055
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9923697091851426,
+          "lo": 0.9663491149788124,
+          "hi": 1.0183903033914727,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6102073135617658
+        },
+        "wifi": {
+          "slope": 0.9852087756546355,
+          "lo": 0.9348951555383284,
+          "hi": 1.0355223957709425,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8789808917197455
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.7682703872276,
+          "lo": -96.03243761362309,
+          "hi": -95.52204372568671,
+          "truth": -97.11226159530788,
+          "error": 1.3439912080802827,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.66626897594192,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.3334081132168,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 1,
+        "min_p_raw": 0.00397675170978865,
+        "min_p_holm": 0.035790765388097855,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 0.7777777777777778
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.08326451666355039,
+        "min_p_holm": 0.6661161333084031,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.38694433914508836
+      },
+      "drift": {
+        "est_db": -1.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2012,
+      "truth": {
+        "rssi_bias_db": -1.221146517908926,
+        "tx_error_db": {
+          "DUT-01": 0.08133945082483494,
+          "DUT-02": -0.3056048883202534
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89192,
+      "path_loss": {
+        "n": 2.159253261676785,
+        "lo": -0.05411440610878593,
+        "hi": 4.372620929462356,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 6.620674688680403,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -23.000000000000004,
+        "truth_intercept": -24.94544342122225
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.983779633362127,
+          "lo": 0.9598841695710669,
+          "hi": 1.0076750971531871,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7769939533544488
+        },
+        "wifi": {
+          "slope": 1.013021939136589,
+          "lo": 0.9741221499258347,
+          "hi": 1.051921728347343,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5476999292285853
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.10969525185439,
+          "lo": -96.21411831238444,
+          "hi": -96.05302385788653,
+          "truth": -97.11226159530788,
+          "error": 1.0025663434534948,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -104.25901343008381,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -101.9261525673587,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.1502818402332788,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.6365314407053687
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2013,
+      "truth": {
+        "rssi_bias_db": -4.813890972050818,
+        "tx_error_db": {
+          "DUT-01": 0.06402729948652912,
+          "DUT-02": 0.7005587401918978
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89198,
+      "path_loss": {
+        "n": 1.9267182950346704,
+        "lo": 0.0673532025225767,
+        "hi": 3.786083387546764,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 5.561774297230455,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -20.799999999999997,
+        "truth_intercept": -21.423762292790578
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9870668970150686,
+          "lo": 0.9748912512432971,
+          "hi": 0.99924254278684,
+          "truth": 1.0,
+          "covers": false,
+          "max_resid_db": 0.42576062961896355
+        },
+        "wifi": {
+          "slope": 0.9966029723991507,
+          "lo": 0.9767072135302536,
+          "hi": 1.016498731268048,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.4471337579617831
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.07468377204756,
+          "lo": -96.77957715143924,
+          "hi": -95.61177392839606,
+          "truth": -97.11226159530788,
+          "error": 1.037577823260321,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.58608369079656,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.25322282807144,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.40278369424647564,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.03512599807917888
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2014,
+      "truth": {
+        "rssi_bias_db": -1.1409612327635603,
+        "tx_error_db": {
+          "DUT-01": -0.0872213113690574,
+          "DUT-02": -0.12234730944823628
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89174,
+      "path_loss": {
+        "n": 1.4284290808015663,
+        "lo": -0.07039044175598042,
+        "hi": 2.927248603359113,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 4.483302354291979,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -17.799999999999997,
+        "truth_intercept": -19.04587089505588
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0076302908148576,
+          "lo": 0.9706988361519384,
+          "hi": 1.0445617454777767,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 1.0729196659948173
+        },
+        "wifi": {
+          "slope": 1.0075725406935598,
+          "lo": 0.9678610107389699,
+          "hi": 1.0472840706481499,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6528662420382183
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -97.0800620570303,
+          "lo": -98.54782893425883,
+          "hi": -96.07039041693653,
+          "truth": -97.11226159530788,
+          "error": 0.03219953827758104,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -99.0371531280741,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.70429226534898,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.09295731572744009,
+        "min_p_holm": 0.8366158415469609,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.48592691453267534
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2015,
+      "truth": {
+        "rssi_bias_db": 0.4079693299589038,
+        "tx_error_db": {
+          "DUT-01": 0.7417395236431785,
+          "DUT-02": 0.2558126091105032
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89194,
+      "path_loss": {
+        "n": 1.2291133951083242,
+        "lo": 0.20231802211080518,
+        "hi": 2.255908768105843,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 3.0713731999438507,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -23.200000000000003,
+        "truth_intercept": -19.74284310604829
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0066225165562914,
+          "lo": 0.98037979337326,
+          "hi": 1.0328652397393228,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8245033112582725
+        },
+        "wifi": {
+          "slope": 0.992356687898089,
+          "lo": 0.9580931412382255,
+          "hi": 1.0266202345579523,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.32484076433121345
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -97.38754806618795,
+          "lo": -99.07603860128414,
+          "hi": -96.0907922299312,
+          "truth": -97.11226159530788,
+          "error": -0.27528647088006153,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.11274418843368,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -97.77988332570857,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.008561916896063827,
+        "min_p_holm": 0.07705725206457444,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.40278369424647564,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -2.0,
+        "truth_db": -1.5457270230605078
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2016,
+      "truth": {
+        "rssi_bias_db": -0.6676217304006759,
+        "tx_error_db": {
+          "DUT-01": 1.1203583730103472,
+          "DUT-02": -0.4253686500501605
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89179,
+      "path_loss": {
+        "n": 1.0962362713128297,
+        "lo": -1.4781793335234967,
+        "hi": 3.6706518761491562,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 7.700649323271383,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -26.199999999999996,
+        "truth_intercept": -23.86921685873321
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0088060274498512,
+          "lo": 0.9803241638781284,
+          "hi": 1.037287891021574,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7782656684902562
+        },
+        "wifi": {
+          "slope": 0.9954706298655344,
+          "lo": 0.9608940013697558,
+          "hi": 1.030047258361313,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.30360934182590427
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.02385223777989,
+          "lo": -96.0907922299312,
+          "hi": -95.97975107611813,
+          "truth": -97.11226159530788,
+          "error": 1.0884093575279934,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -102.65782916314677,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -100.32496830042166,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.06679806847513828,
+        "min_p_holm": 0.6011826162762445,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.24706878495642243
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2017,
+      "truth": {
+        "rssi_bias_db": -3.2127067051137743,
+        "tx_error_db": {
+          "DUT-01": -0.4609304049614727,
+          "DUT-02": -0.7079991899178951
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89136,
+      "path_loss": {
+        "n": 2.458226790216648,
+        "lo": 0.968132278720029,
+        "hi": 3.948321301713267,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 4.457203906785809,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -18.800000000000004,
+        "truth_intercept": -23.156929793660694
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9781408964391975,
+          "lo": 0.9508298626086377,
+          "hi": 1.0054519302697573,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 1.0278337652365863
+        },
+        "wifi": {
+          "slope": 1.015923566878981,
+          "lo": 0.9702162151775279,
+          "hi": 1.0616309185804342,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5621019108280301
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.16386912683055,
+          "lo": -95.89301281000671,
+          "hi": -94.85293335657302,
+          "truth": -97.11226159530788,
+          "error": 1.948392468477337,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -101.79960764762176,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -99.46674678489664,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.06679806847513828,
+        "min_p_holm": 0.6011826162762445,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.5,
+        "truth_db": 1.1052549327313888
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2018,
+      "truth": {
+        "rssi_bias_db": -2.354485189588763,
+        "tx_error_db": {
+          "DUT-01": -0.6068648554139688,
+          "DUT-02": 0.49839007731741986
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89153,
+      "path_loss": {
+        "n": 1.5613062045970603,
+        "lo": 0.7356177156606588,
+        "hi": 2.386994693533462,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 2.4698178070456938,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -21.200000000000003,
+        "truth_intercept": -19.42700028053131
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9974565697283808,
+          "lo": 0.9745326585224509,
+          "hi": 1.0203804809343109,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6000095978500823
+        },
+        "wifi": {
+          "slope": 1.0261146496815285,
+          "lo": 0.9831545821531734,
+          "hi": 1.0690747172098836,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6904458598726144
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.5193059175069,
+          "lo": -95.9385318861421,
+          "hi": -95.17033705714823,
+          "truth": -97.11226159530788,
+          "error": 1.5929556778009868,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -98.1701040065029,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -95.83724314377778,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 1,
+        "min_p_raw": 0.00397675170978865,
+        "min_p_holm": 0.035790765388097855,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 0.8888888888888888
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.23303798227390538,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": 0.7735838986427326
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2019,
+      "truth": {
+        "rssi_bias_db": 1.2750184515301017,
+        "tx_error_db": {
+          "DUT-01": -0.5064389834034498,
+          "DUT-02": 0.26714491523928274
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89201,
+      "path_loss": {
+        "n": 1.328771237954945,
+        "lo": -0.23928867730035086,
+        "hi": 2.8968311532102407,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 4.69041575982343,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -20.0,
+        "truth_intercept": -18.11501478650867
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0256742489682311,
+          "lo": 1.001450802283191,
+          "hi": 1.0498976956532713,
+          "truth": 1.0,
+          "covers": false,
+          "max_resid_db": 0.7328438429791717
+        },
+        "wifi": {
+          "slope": 0.9823779193205945,
+          "lo": 0.9490444764592367,
+          "hi": 1.0157113621819522,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.4893842887473525
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -97.57185816498932,
+          "lo": -99.58136252496665,
+          "hi": -96.0998868837536,
+          "truth": -97.11226159530788,
+          "error": -0.4595965696814375,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -98.04131089280588,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -95.70845003008077,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.05582929463924008,
+        "min_p_holm": 0.44663435711392063,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -1.0,
+        "truth_db": -1.4531381430498262
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2020,
+      "truth": {
+        "rssi_bias_db": 1.4038115652271168,
+        "tx_error_db": {
+          "DUT-01": 0.6767533969221756,
+          "DUT-02": -0.7763847461276506
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89122,
+      "path_loss": {
+        "n": 1.8270604521880498,
+        "lo": -0.42634122445042943,
+        "hi": 4.080462128826529,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 6.740425308044984,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -20.199999999999996,
+        "truth_intercept": -20.66070687749677
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9987042902389864,
+          "lo": 0.9680492436415385,
+          "hi": 1.0293593368364344,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 1.1535416066801076
+        },
+        "wifi": {
+          "slope": 1.0290162774239209,
+          "lo": 0.9751511007700794,
+          "hi": 1.0828814540777623,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.9433828733191802
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.17719945251366,
+          "lo": -95.64914301277012,
+          "hi": -94.75802090841412,
+          "truth": -97.11226159530788,
+          "error": 1.935062142794223,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -99.64825568479476,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -97.31539482206965,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.17701598287480413,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": 0.5478037261606743
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2021,
+      "truth": {
+        "rssi_bias_db": -0.20313322676176448,
+        "tx_error_db": {
+          "DUT-01": -0.26199390207704615,
+          "DUT-02": 0.28580982408362815
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89162,
+      "path_loss": {
+        "n": 2.026376137881291,
+        "lo": 1.3549729942567463,
+        "hi": 2.6977792815058352,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 2.0083160441856096,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -22.900000000000006,
+        "truth_intercept": -22.783277810981122
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9890584509069967,
+          "lo": 0.9721639524351604,
+          "hi": 1.005952949378833,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7034264324791231
+        },
+        "wifi": {
+          "slope": 1.030007077140835,
+          "lo": 0.9912767726618562,
+          "hi": 1.0687373816198136,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7063694267515928
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.80198897096369,
+          "lo": -96.21629697063202,
+          "hi": -95.47257431027725,
+          "truth": -97.11226159530788,
+          "error": 1.3102726243441936,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -101.44097332965396,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -99.10811246692884,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.06679806847513828,
+        "min_p_holm": 0.6011826162762445,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": 1.0367246530132244
+      },
+      "drift": {
+        "est_db": 1.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2022,
+      "truth": {
+        "rssi_bias_db": -1.9958508716209629,
+        "tx_error_db": {
+          "DUT-01": -0.5918471907021967,
+          "DUT-02": 0.4448774623110277
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89185,
+      "path_loss": {
+        "n": 1.7606218902903021,
+        "lo": -0.028283065192812984,
+        "hi": 3.5495268457734173,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 5.351012365275691,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -19.6,
+        "truth_intercept": -21.37014275409056
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.99368941357136,
+          "lo": 0.9637475453075852,
+          "hi": 1.0236312818351347,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 1.0268499856032243
+        },
+        "wifi": {
+          "slope": 1.0064401981599436,
+          "lo": 0.9666152357184769,
+          "hi": 1.0462651606014104,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6122788393489031
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.14463246430623,
+          "lo": -96.2709449940928,
+          "hi": -96.07432298362218,
+          "truth": -97.11226159530788,
+          "error": 0.967629131001658,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.90492844994013,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.57206758721502,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.00749495751693524,
+        "min_p_holm": 0.06745461765241716,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.01996445330521604,
+        "min_p_holm": 0.17968007974694436,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -1.0,
+        "truth_db": -1.2350789966599343
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2023,
+      "truth": {
+        "rssi_bias_db": -1.459805991907126,
+        "tx_error_db": {
+          "DUT-01": 0.2852429864745294,
+          "DUT-02": -0.9498360101854049
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89135,
+      "path_loss": {
+        "n": 1.4284290808015658,
+        "lo": -0.8249725958369152,
+        "hi": 3.681830757440047,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 6.740425308044987,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -23.0,
+        "truth_intercept": -20.642718555134437
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0006958441309146,
+          "lo": 0.9798862896133248,
+          "hi": 1.0215053986485045,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6237882714272018
+        },
+        "wifi": {
+          "slope": 0.975654635527247,
+          "lo": 0.9292015165213847,
+          "hi": 1.0221077545331092,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5595895258315657
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.0613803557916,
+          "lo": -95.47356200160733,
+          "hi": -94.71545951930092,
+          "truth": -97.11226159530788,
+          "error": 2.0508812395162863,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -99.2565828798374,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.92372201711228,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.00749495751693524,
+        "min_p_holm": 0.06745461765241716,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.02092133533779403,
+        "min_p_holm": 0.16737068270235225,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.8258011002576149
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2024,
+      "truth": {
+        "rssi_bias_db": 0.18853957819559689,
+        "tx_error_db": {
+          "DUT-01": -0.6356783846720712,
+          "DUT-02": 0.19012271558554375
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89185,
+      "path_loss": {
+        "n": 1.1294555522617034,
+        "lo": -1.1802796541586285,
+        "hi": 3.4391907586820354,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 6.908931417616862,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -22.0,
+        "truth_intercept": -21.68554939330903
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9885785584029179,
+          "lo": 0.9678750046139175,
+          "hi": 1.0092821121919182,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6571647950859045
+        },
+        "wifi": {
+          "slope": 1.0142250530785561,
+          "lo": 0.9570837703084438,
+          "hi": 1.0713663358486685,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8974522292993612
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.1203234660879,
+          "lo": -96.23948128636464,
+          "hi": -96.05974789930035,
+          "truth": -97.11226159530788,
+          "error": 0.9919381292199887,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.93035890325217,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.59749804052706,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.05582929463924008,
+        "min_p_holm": 0.5024636517531607,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.4278251284736777
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2025,
+      "truth": {
+        "rssi_bias_db": -1.4852364452191678,
+        "tx_error_db": {
+          "DUT-01": -0.004733199431901429,
+          "DUT-02": 0.4230919290417763
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89188,
+      "path_loss": {
+        "n": 2.059595418830165,
+        "lo": 0.7002446929520698,
+        "hi": 3.4189461447082605,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 4.066120181860508,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -17.6,
+        "truth_intercept": -19.117505237159204
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9992321719934735,
+          "lo": 0.9769522771396516,
+          "hi": 1.0215120668472952,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.7668682215183793
+        },
+        "wifi": {
+          "slope": 0.9864826610049539,
+          "lo": 0.9245177227082877,
+          "hi": 1.04844759930162,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5749469214437397
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.23948128636464,
+          "lo": -96.47918573006363,
+          "hi": -96.14463246430623,
+          "truth": -97.11226159530788,
+          "error": 0.8727803089432484,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -99.12513734585768,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -96.79227648313257,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.00749495751693524,
+        "min_p_holm": 0.06745461765241716,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.023150951985246346,
+        "min_p_holm": 0.20835856786721713,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -1.0,
+        "truth_db": -0.460553709936455
+      },
+      "drift": {
+        "est_db": 0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2026,
+      "truth": {
+        "rssi_bias_db": 0.31998511217531,
+        "tx_error_db": {
+          "DUT-01": 0.7580893993234481,
+          "DUT-02": 0.2975356893869931
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89188,
+      "path_loss": {
+        "n": 1.312161597480508,
+        "lo": 0.9371461449845377,
+        "hi": 1.6871770499764784,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 1.121754578030924,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -19.8,
+        "truth_intercept": -17.663685849597915
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.999424128995105,
+          "lo": 0.9723267695165431,
+          "hi": 1.0265214884736669,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.9179383818024718
+        },
+        "wifi": {
+          "slope": 1.0041755130927106,
+          "lo": 0.9654573430550828,
+          "hi": 1.0428936831303384,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.4412597310686479
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -97.53905259522675,
+          "lo": -99.50209102234258,
+          "hi": -96.09511219049683,
+          "truth": -97.11226159530788,
+          "error": -0.4267909999188646,
+          "covers": true,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -97.15152506060755,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -94.81866419788244,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.13332693177434943,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 0.0,
+        "truth_db": -0.31984265190263217
+      },
+      "drift": {
+        "est_db": -0.5,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2027,
+      "truth": {
+        "rssi_bias_db": 2.2935973974254416,
+        "tx_error_db": {
+          "DUT-01": 0.23829650163460867,
+          "DUT-02": -0.08154615026802349
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89114,
+      "path_loss": {
+        "n": 1.1294555522617034,
+        "lo": -0.8237172291915045,
+        "hi": 3.0826283337149114,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 5.842373946721771,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -28.2,
+        "truth_intercept": -22.785897538540688
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 0.9925376715615702,
+          "lo": 0.9713010233529251,
+          "hi": 1.0137743197702154,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.6274354544581939
+        },
+        "wifi": {
+          "slope": 1.0198159943382874,
+          "lo": 0.9897584616440572,
+          "hi": 1.0498735270325177,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.34394904458598674
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -95.07213178826359,
+          "lo": -95.8807301116709,
+          "hi": -94.75737305787325,
+          "truth": -97.11226159530788,
+          "error": 2.040129807044295,
+          "covers": false,
+          "bracketed": true
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -101.08529910632929,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -98.75243824360417,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.005583616806378765,
+        "min_p_holm": 0.05025255125740889,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.25683925795785656,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": 1.0,
+        "truth_db": 0.6790213730324235
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2028,
+      "truth": {
+        "rssi_bias_db": -1.6401766482962952,
+        "tx_error_db": {
+          "DUT-01": -0.9501411415864299,
+          "DUT-02": -0.27111976855400644
+        }
+      }
+    },
+    {
+      "notes": [
+        "PER waterfall ble OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi CONDUCTED: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)",
+        "PER waterfall wifi OTA: not fitted: no step has a PER strictly between 0% and 100%: the data never reached the waterfall, so there is nothing to fit (go lower in level)"
+      ],
+      "n_runs": 27,
+      "n_steps": 363,
+      "n_packets": 89191,
+      "path_loss": {
+        "n": 2.0928146997790384,
+        "lo": 0.9299103426598698,
+        "hi": 3.255719056898207,
+        "truth": 1.57,
+        "covers": true,
+        "sigma_db": 3.4785054261852184,
+        "truth_sigma_db": 3.9428712042537395,
+        "intercept": -20.299999999999997,
+        "truth_intercept": -20.861061765379652
+      },
+      "tx_linearity": {
+        "ble": {
+          "slope": 1.0038631346578368,
+          "lo": 0.9853660619633653,
+          "hi": 1.0223602073523084,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.8189845474613691
+        },
+        "wifi": {
+          "slope": 0.9917197452229299,
+          "lo": 0.9367718053747282,
+          "hi": 1.0466676850711318,
+          "truth": 1.0,
+          "covers": true,
+          "max_resid_db": 0.5853503184713418
+        }
+      },
+      "waterfall": {
+        "ble CONDUCTED": {
+          "level": -96.14463246430623,
+          "lo": -96.2709449940928,
+          "hi": -96.07432298362218,
+          "truth": -97.11226159530788,
+          "error": 0.967629131001658,
+          "covers": false,
+          "bracketed": false
+        },
+        "wifi OTA": {
+          "fitted": false,
+          "truth": -100.26308185487467,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "wifi CONDUCTED": {
+          "fitted": false,
+          "truth": -99.445122458033,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        },
+        "ble OTA": {
+          "fitted": false,
+          "truth": -97.93022099214956,
+          "per_range_pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "build_evt": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.006501702373081823,
+        "min_p_holm": 0.058515321357736405,
+        "median_shift_db": -2.0,
+        "truth_median_shift_db": -2.0,
+        "ci_covers_truth": 1.0
+      },
+      "build_orient": {
+        "n_tests": 9,
+        "n_flagged": 0,
+        "min_p_raw": 0.23199772362873405,
+        "min_p_holm": 1.0,
+        "median_shift_db": 0.0,
+        "truth_median_shift_db": 0.0,
+        "ci_covers_truth": 1.0
+      },
+      "unit_to_unit": {
+        "est_db": -1.0,
+        "truth_db": -0.6287143316924838
+      },
+      "drift": {
+        "est_db": 0.0,
+        "truth_db": -0.0
+      },
+      "ieee154": {
+        "steps": 15,
+        "max_per_pct": 0.0
+      },
+      "seed": 2029,
+      "truth": {
+        "rssi_bias_db": -0.8179593968416771,
+        "tx_error_db": {
+          "DUT-01": 0.15247738011998713,
+          "DUT-02": -0.4762369515724967
+        }
+      }
+    }
+  ]
+}
