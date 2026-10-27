@@ -1,0 +1,393 @@
+{
+  "label": "REAL PUBLIC DATA (eWINE UWB LOS/NLOS Data Set, Decawave DWM1000), not our hardware",
+  "dataset": {
+    "source": "https://github.com/ewine-project/UWB-LOS-NLOS-Data-Set",
+    "commit": "9a7e755a5a2ed2e2656bea89d8d0d74d7093553d",
+    "n": 42000,
+    "n_los": 21000,
+    "n_nlos": 21000,
+    "per_file_nlos": {
+      "1": 2968,
+      "2": 2982,
+      "3": 2992,
+      "4": 3055,
+      "5": 2967,
+      "6": 2986,
+      "7": 3050
+    },
+    "config_groups": {
+      "FRAME_LEN=27/29": {
+        "n": 18194,
+        "n_nlos": 8740
+      },
+      "FRAME_LEN=39": {
+        "n": 23806,
+        "n_nlos": 12260
+      }
+    }
+  },
+  "site_labels": "not recoverable from the public release (shuffled, no environment column); leave-one-site-out not measurable. Headline uses leave-one-config-out (FRAME_LEN).",
+  "model": "sklearn HistGradientBoostingClassifier(max_iter=400, lr=0.05, max_leaf_nodes=31, seed=0)",
+  "features": [
+    "fp_power_dbm",
+    "rx_power_dbm",
+    "fp_rx_diff_db",
+    "fp_to_total_ratio",
+    "rxpacc",
+    "range_m",
+    "max_amp",
+    "energy",
+    "fp_amp_cir",
+    "fp_to_peak_delay",
+    "fp_to_peak_amp_ratio",
+    "rise_time",
+    "mean_excess_delay",
+    "rms_delay_spread",
+    "kurtosis",
+    "e_frac_3ns",
+    "e_frac_10ns",
+    "peak_snr_db",
+    "fp_snr_db",
+    "max_noise_norm",
+    "stdev_noise_norm"
+  ],
+  "leave_one_config_out": {
+    "folds": [
+      {
+        "held_out": "FRAME_LEN=27/29",
+        "n": 18194,
+        "n_nlos": 8740,
+        "accuracy": 0.9346487853138398,
+        "f1": 0.9315998389230857,
+        "auc": 0.9824024095475671
+      },
+      {
+        "held_out": "FRAME_LEN=39",
+        "n": 23806,
+        "n_nlos": 12260,
+        "accuracy": 0.9173737713181551,
+        "f1": 0.9177778706683944,
+        "auc": 0.9747167723177789
+      }
+    ],
+    "summary": {
+      "accuracy": {
+        "mean": 0.9260112783159975,
+        "std": 0.012215279541441132,
+        "min": 0.9173737713181551,
+        "max": 0.9346487853138398
+      },
+      "f1": {
+        "mean": 0.9246888547957401,
+        "std": 0.009773607482237398,
+        "min": 0.9177778706683944,
+        "max": 0.9315998389230857
+      },
+      "auc": {
+        "mean": 0.978559590932673,
+        "std": 0.005434566202923036,
+        "min": 0.9747167723177789,
+        "max": 0.9824024095475671
+      }
+    }
+  },
+  "random_5fold": {
+    "folds": [
+      {
+        "fold": 0,
+        "n": 8400,
+        "n_nlos": 4200,
+        "accuracy": 0.9328571428571428,
+        "f1": 0.9321462945139557,
+        "auc": 0.9812924036281179
+      },
+      {
+        "fold": 1,
+        "n": 8400,
+        "n_nlos": 4200,
+        "accuracy": 0.934047619047619,
+        "f1": 0.9330917874396135,
+        "auc": 0.982172619047619
+      },
+      {
+        "fold": 2,
+        "n": 8400,
+        "n_nlos": 4200,
+        "accuracy": 0.9277380952380953,
+        "f1": 0.9269290959431804,
+        "auc": 0.98140589569161
+      },
+      {
+        "fold": 3,
+        "n": 8400,
+        "n_nlos": 4200,
+        "accuracy": 0.9285714285714286,
+        "f1": 0.9278846153846154,
+        "auc": 0.9811008503401359
+      },
+      {
+        "fold": 4,
+        "n": 8400,
+        "n_nlos": 4200,
+        "accuracy": 0.9336904761904762,
+        "f1": 0.9331573262930517,
+        "auc": 0.9824381519274377
+      }
+    ],
+    "summary": {
+      "accuracy": {
+        "mean": 0.9313809523809523,
+        "std": 0.0029911528655106323,
+        "min": 0.9277380952380953,
+        "max": 0.934047619047619
+      },
+      "f1": {
+        "mean": 0.9306418239148833,
+        "std": 0.002999168765749926,
+        "min": 0.9269290959431804,
+        "max": 0.9331573262930517
+      },
+      "auc": {
+        "mean": 0.9816819841269842,
+        "std": 0.0005869894878210898,
+        "min": 0.9811008503401359,
+        "max": 0.9824381519274377
+      }
+    }
+  },
+  "heuristic_fp_rx_6db": {
+    "rule": "NLOS if rx_power_dbm - fp_power_dbm > 6 dB (Decawave APS006 Part 3)",
+    "accuracy": 0.6720238095238096,
+    "f1": 0.6590768469248856,
+    "auc_of_diff": 0.7267309070294784
+  },
+  "ablation_shape_only": {
+    "features": [
+      "fp_to_peak_delay",
+      "fp_to_peak_amp_ratio",
+      "rise_time",
+      "mean_excess_delay",
+      "rms_delay_spread",
+      "kurtosis",
+      "e_frac_3ns",
+      "e_frac_10ns",
+      "fp_rx_diff_db",
+      "fp_to_total_ratio"
+    ],
+    "leave_one_config_out": {
+      "accuracy": {
+        "mean": 0.7232404051950068,
+        "std": 0.006324401906597501,
+        "min": 0.7187683777199025,
+        "max": 0.727712432670111
+      },
+      "f1": {
+        "mean": 0.7077127262134039,
+        "std": 0.022221410753650042,
+        "min": 0.6919998159819662,
+        "max": 0.7234256364448415
+      },
+      "auc": {
+        "mean": 0.804348285549887,
+        "std": 0.007449785095502222,
+        "min": 0.7990804919904749,
+        "max": 0.8096160791092991
+      }
+    },
+    "random_5fold": {
+      "accuracy": {
+        "mean": 0.7305238095238095,
+        "std": 0.004795713316405799,
+        "min": 0.7222619047619048,
+        "max": 0.7346428571428572
+      },
+      "f1": {
+        "mean": 0.7171310705809304,
+        "std": 0.0066314183962796645,
+        "min": 0.7061342738380149,
+        "max": 0.7238944630248978
+      },
+      "auc": {
+        "mean": 0.8087323185941042,
+        "std": 0.004617255637294428,
+        "min": 0.8012096655328798,
+        "max": 0.8118697562358277
+      }
+    }
+  },
+  "ablation_no_range": {
+    "features": [
+      "fp_power_dbm",
+      "rx_power_dbm",
+      "fp_rx_diff_db",
+      "fp_to_total_ratio",
+      "rxpacc",
+      "max_amp",
+      "energy",
+      "fp_amp_cir",
+      "fp_to_peak_delay",
+      "fp_to_peak_amp_ratio",
+      "rise_time",
+      "mean_excess_delay",
+      "rms_delay_spread",
+      "kurtosis",
+      "e_frac_3ns",
+      "e_frac_10ns",
+      "peak_snr_db",
+      "fp_snr_db",
+      "max_noise_norm",
+      "stdev_noise_norm"
+    ],
+    "leave_one_config_out": {
+      "accuracy": {
+        "mean": 0.8794904112555937,
+        "std": 0.012246422344278897,
+        "min": 0.8708308829706797,
+        "max": 0.8881499395405078
+      },
+      "f1": {
+        "mean": 0.8749208189308977,
+        "std": 0.006546880842217923,
+        "min": 0.8702914750917451,
+        "max": 0.8795501627700503
+      },
+      "auc": {
+        "mean": 0.9480471135334785,
+        "std": 0.008642628110375056,
+        "min": 0.9419358525893589,
+        "max": 0.9541583744775982
+      }
+    },
+    "random_5fold": {
+      "accuracy": {
+        "mean": 0.8842142857142857,
+        "std": 0.0034509438716737065,
+        "min": 0.8803571428571428,
+        "max": 0.888452380952381
+      },
+      "f1": {
+        "mean": 0.8804447746547114,
+        "std": 0.0038177573951692022,
+        "min": 0.8764293618590926,
+        "max": 0.8856898865438575
+      },
+      "auc": {
+        "mean": 0.9525969160997733,
+        "std": 0.0016621373557335246,
+        "min": 0.9505700680272109,
+        "max": 0.9548540816326531
+      }
+    }
+  },
+  "permutation_importance_in_sample": {
+    "energy": 0.16753333333333334,
+    "range_m": 0.13853333333333337,
+    "rx_power_dbm": 0.04460000000000005,
+    "peak_snr_db": 0.03726666666666667,
+    "rms_delay_spread": 0.03493333333333337,
+    "e_frac_10ns": 0.018133333333333407,
+    "fp_power_dbm": 0.017133333333333407,
+    "mean_excess_delay": 0.015000000000000013,
+    "kurtosis": 0.011133333333333365,
+    "stdev_noise_norm": 0.00986666666666669,
+    "rxpacc": 0.007466666666666695,
+    "max_noise_norm": 0.005933333333333346,
+    "max_amp": 0.005066666666666664,
+    "fp_rx_diff_db": 0.004733333333333367,
+    "rise_time": 0.004666666666666708,
+    "e_frac_3ns": 0.0034000000000000328,
+    "fp_to_peak_amp_ratio": 0.002866666666666684,
+    "fp_to_peak_delay": 0.002666666666666669,
+    "fp_snr_db": 0.0017333333333333645,
+    "fp_to_total_ratio": 0.0017333333333333274,
+    "fp_amp_cir": 0.001399999999999994
+  },
+  "los_vs_nlos_feature_medians": {
+    "fp_power_dbm": {
+      "LOS": -85.34030380882213,
+      "NLOS": -100.61203959239675
+    },
+    "rx_power_dbm": {
+      "LOS": -80.49913240413508,
+      "NLOS": -91.40304759542823
+    },
+    "fp_rx_diff_db": {
+      "LOS": 3.911606090771855,
+      "NLOS": 8.102023829691248
+    },
+    "fp_to_total_ratio": {
+      "LOS": 0.4062930477825487,
+      "NLOS": 0.15480950545557126
+    },
+    "rxpacc": {
+      "LOS": 332.0,
+      "NLOS": 1024.0
+    },
+    "range_m": {
+      "LOS": 2.43,
+      "NLOS": 4.89
+    },
+    "max_amp": {
+      "LOS": 54.641850961538466,
+      "NLOS": 13.91552734375
+    },
+    "energy": {
+      "LOS": 13918.733689824658,
+      "NLOS": 1147.4681867300615
+    },
+    "fp_amp_cir": {
+      "LOS": 24.22924387281617,
+      "NLOS": 4.3408203125
+    },
+    "fp_to_peak_delay": {
+      "LOS": 2.0,
+      "NLOS": 5.0
+    },
+    "fp_to_peak_amp_ratio": {
+      "LOS": 0.497940359045253,
+      "NLOS": 0.3333596796290441
+    },
+    "rise_time": {
+      "LOS": 3.0,
+      "NLOS": 5.0
+    },
+    "mean_excess_delay": {
+      "LOS": 5.894925635878524,
+      "NLOS": 9.978408565486133
+    },
+    "rms_delay_spread": {
+      "LOS": 7.033657005711196,
+      "NLOS": 8.981952209213226
+    },
+    "kurtosis": {
+      "LOS": 8.470245907086406,
+      "NLOS": 6.312435944469801
+    },
+    "e_frac_3ns": {
+      "LOS": 0.4622162967712158,
+      "NLOS": 0.18885156254933017
+    },
+    "e_frac_10ns": {
+      "LOS": 0.8544419003005127,
+      "NLOS": 0.6620005374922018
+    },
+    "peak_snr_db": {
+      "LOS": 49.35267294842053,
+      "NLOS": 44.81104797147694
+    },
+    "fp_snr_db": {
+      "LOS": 42.61436414781733,
+      "NLOS": 34.07233646101986
+    },
+    "max_noise_norm": {
+      "LOS": 3.7880068283351696,
+      "NLOS": 1.193365478881975
+    },
+    "stdev_noise_norm": {
+      "LOS": 0.1750841750841751,
+      "NLOS": 0.07958115183246073
+    }
+  },
+  "machine": "macOS-26.5.1-arm64-arm-64bit / arm / python 3.12.7",
+  "runtime_s": 277.3
+}

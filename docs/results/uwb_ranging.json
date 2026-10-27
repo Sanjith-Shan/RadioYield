@@ -1,0 +1,167 @@
+{
+  "label": "REAL PUBLIC DATA (IDLab Ghent TWR Correction Dataset, Qorvo DW1000 / Wi-PoS, ADS-TWR, Qualisys mocap ground truth), not our hardware",
+  "dataset": {
+    "index": "https://huggingface.co/datasets/iwine-ugent/uwb-positioning-datasets",
+    "hf_card_sha": "d813ce72783241142102723b77c09c0f5fa165d1",
+    "shares": {
+      "twr_ds1": "https://cloud.ilabt.imec.be/index.php/s/iS3RkgeHAwitPTp",
+      "twr_ds2": "https://cloud.ilabt.imec.be/index.php/s/QtwFWDZG6PyrNXc"
+    },
+    "sessions": {
+      "twr_ds1": {
+        "n": 1757,
+        "duration_s": 548.9302670955658,
+        "anchors": 22
+      },
+      "twr_ds2": {
+        "n": 1622,
+        "duration_s": 551.3884994983673,
+        "anchors": 20
+      }
+    }
+  },
+  "model": "sklearn HistGradientBoostingRegressor(loss=absolute_error, max_iter=300, lr=0.05, max_leaf_nodes=15, min_samples_leaf=20, seed=0); target = raw range - mocap distance",
+  "features": [
+    "range_m",
+    "fp_power_dbm",
+    "rx_power_dbm",
+    "fp_rx_diff_db",
+    "rxpacc",
+    "fp_frac",
+    "pp_minus_fp",
+    "fpampl1_n",
+    "fpampl2_n",
+    "fpampl3_n",
+    "ppampl_n",
+    "cir_noise_n",
+    "ldethr_n",
+    "max_amp",
+    "energy",
+    "fp_amp_cir",
+    "fp_to_peak_delay",
+    "fp_to_peak_amp_ratio",
+    "rise_time",
+    "mean_excess_delay",
+    "rms_delay_spread",
+    "kurtosis",
+    "e_frac_3ns",
+    "e_frac_10ns",
+    "peak_snr_db",
+    "fp_snr_db"
+  ],
+  "protocol": "held-out session: train on one recording, test on the other (both directions)",
+  "train_ds1_test_ds2": {
+    "n_train": 1757,
+    "n_test": 1622,
+    "mae_before": 0.19552596279676193,
+    "p95_before": 0.583870609695858,
+    "mae_after": 0.1444792260559856,
+    "p95_after": 0.4722580120980501,
+    "mean_err_before": 0.029450790674359975,
+    "mean_err_after": 0.04864495461617043,
+    "mae_const_offset_only": 0.192576563008826,
+    "p95_const_offset_only": 0.6074158481849478,
+    "ci95": {
+      "mae_before": [
+        0.18047418820779715,
+        0.21010879847748293
+      ],
+      "mae_after": [
+        0.13149493763810413,
+        0.15748895085298373
+      ],
+      "p95_before": [
+        0.514645676948006,
+        0.675030157965409
+      ],
+      "p95_after": [
+        0.40023263152597494,
+        0.5582338549130111
+      ],
+      "mae_delta": [
+        -0.057553658287981806,
+        -0.04455547036707835
+      ],
+      "p95_delta": [
+        -0.17006925512131918,
+        -0.07058314822487739
+      ],
+      "n_blocks": 56,
+      "block_s": 10.0,
+      "n_boot": 2000,
+      "seed": 0
+    }
+  },
+  "train_ds2_test_ds1": {
+    "n_train": 1622,
+    "n_test": 1757,
+    "mae_before": 0.1914735868242253,
+    "p95_before": 0.5402107189122077,
+    "mae_after": 0.14429256589439138,
+    "p95_after": 0.42421989077442623,
+    "mean_err_before": 0.030223805045722526,
+    "mean_err_after": 0.04088375551412885,
+    "mae_const_offset_only": 0.1905666111803859,
+    "p95_const_offset_only": 0.5583606345001771,
+    "ci95": {
+      "mae_before": [
+        0.17405440539639522,
+        0.2100443684948277
+      ],
+      "mae_after": [
+        0.12964269976140896,
+        0.16035707680460987
+      ],
+      "p95_before": [
+        0.48054382393918865,
+        0.6004348867171749
+      ],
+      "p95_after": [
+        0.3818955315246674,
+        0.47561431969064083
+      ],
+      "mae_delta": [
+        -0.05398693079988532,
+        -0.040693176819695434
+      ],
+      "p95_delta": [
+        -0.1570348514878332,
+        -0.07309781692834898
+      ],
+      "n_blocks": 55,
+      "block_s": 10.0,
+      "n_boot": 2000,
+      "seed": 0
+    }
+  },
+  "error_by_nlos_proxy": {
+    "likely_LOS (rx-fp<=6dB)": {
+      "n": 2102,
+      "mean_err_m": 0.01000913778262446,
+      "median_err_m": -0.04568942832765455,
+      "mae_m": 0.17602013032289707,
+      "p95_abs_m": 0.48571093434776885
+    },
+    "likely_NLOS (rx-fp>6dB)": {
+      "n": 1277,
+      "mean_err_m": 0.06251621011751742,
+      "median_err_m": -0.0036915129395529434,
+      "mae_m": 0.2220578619951308,
+      "p95_abs_m": 0.7318551667647634
+    }
+  },
+  "error_by_session": {
+    "twr_ds1": {
+      "mean_err_m": 0.030223805045722526,
+      "median_err_m": -0.025813571159154947,
+      "std_err_m": 0.3346677094826404
+    },
+    "twr_ds2": {
+      "mean_err_m": 0.029450790674359975,
+      "median_err_m": -0.03654171915318294,
+      "std_err_m": 0.342371460995399
+    }
+  },
+  "machine": "macOS-26.5.1-arm64-arm-64bit / arm / python 3.12.7",
+  "runtime_s": 18.5
+}
