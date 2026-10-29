@@ -1,0 +1,78 @@
+# RadioYield CI: everything except the rig.
+#
+# What runs here: the C++ STDF reader/writer (ctest + pytest round trips against
+# pystdf), the firmware packet/line codec on the host with ASan+UBSan, a real
+# ESP-IDF build of both firmware roles for esp32c6, the analysis engine with its
+# known-answer tests on simulated lots, the collector end to end against its
+# serial test double, and the UWB feature code on synthetic fixtures.
+#
+# What does not: anything that needs ESP32-C6 boards on USB (pytest -m rig), and
+# the UWB results on the public data sets (pytest -m data; ~320 MB download,
+# `python -m radioyield.uwb fetch`). Neither is pretended here.
+
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  python:
+    name: STDF (C++) + analysis + collector, Python ${{ matrix.python }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install
+        run: |
+          sudo apt-get update && sudo apt-get install -y ninja-build
+          python -m pip install -e '.[dev,bench,rig]'
+      - name: Build the STDF extension
+        run: |
+          cmake -S stdf -B build/stdf -G Ninja -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE="$(which python)"
+          cmake --build build/stdf -j 4
+      - name: ctest (STDF)
+        run: ctest --test-dir build/stdf --output-on-failure
+      - name: pytest (no rig, no downloaded data)
+        run: python -m pytest -q -m "not rig and not data"
+
+  firmware-codec:
+    name: Firmware codec host tests (ASan + UBSan)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cmake -S firmware/host_tests -B build/fw_host -DRY_SANITIZE=ON
+          cmake --build build/fw_host
+          ctest --test-dir build/fw_host --output-on-failure
+
+  firmware:
+    name: Firmware build (ESP-IDF v5.5.6, esp32c6, DUT + REF, EVT1 + EVT2)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build both roles, both TX-table variants
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: v5.5.6
+          target: esp32c6
+          path: firmware
+          command: ./build_all.sh evt1 && ./build_all.sh evt2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: radioyield-fw
+          path: firmware/build/dist/*.bin
