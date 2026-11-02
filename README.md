@@ -126,7 +126,7 @@ The whole session can be rehearsed with no boards: `python -m radioyield.sim.rig
 | `radioyield/uwb/` | UWB public-data work |
 | `plans/` | Example YAML sweep plans |
 | `examples/` | Generated example reports (simulated) |
-| `docs/` | [RESULTS](docs/RESULTS.md), [BASELINES](docs/BASELINES.md), [INTERVIEW](docs/INTERVIEW.md), [RIG](docs/RIG.md) |
+| `docs/` | [RESULTS](docs/RESULTS.md), [BASELINES](docs/BASELINES.md), [RIG](docs/RIG.md) |
 
 ## License
 

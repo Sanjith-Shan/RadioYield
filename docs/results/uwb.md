@@ -269,4 +269,4 @@ Decawave proxy: RX − FP > 6 dB means "likely NLOS". Both sessions are pooled.
 
 The likely-NLOS group has a higher mean error (+5 cm) and a longer positive tail: its p95 is
 0.73 m against 0.49 m for likely LOS. This is the positive NLOS bias, but it is modest here,
-and the proxy label is noisy. The interview notes (`uwb_interview_notes.md`) explain why.
+and the proxy label is noisy.

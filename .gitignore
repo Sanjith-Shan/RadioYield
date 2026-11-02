@@ -15,3 +15,5 @@ firmware/**/sdkconfig.old
 stdf/fuzz/corpus_work/
 out/
 .DS_Store
+docs/INTERVIEW.md
+docs/results/uwb_interview_notes.md
